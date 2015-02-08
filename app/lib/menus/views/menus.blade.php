@@ -7,13 +7,13 @@
 
 	@if ($menu->publication == 1)
 
-		@if ($menu->nom_sys == Request::segment(2))
+		@if ($menu->route == Request::path())
 		<li class ="dropdown active">
 		@else
 		<li class="dropdown">
 		@endif
 
-			<a href={{ URL::to($menu->route) }} > {{ $menu->etiquette }} </a>
+			<a href="{{ URL::to($menu->route) }}" > {{ $menu->etiquette }} </a>
 
 			@if(!$menu->children->isEmpty())
 			<ul class="dropdown-menu">

@@ -44,8 +44,6 @@ require_once("modules/tresorerie/routes.php");
 
 require_once("lib/dashboard/routes.php");
 
-require_once("lib/grille/routes.php");
-
 require_once("lib/menus/routes.php");
 
 require_once("lib/utilisateurs/routes.php");

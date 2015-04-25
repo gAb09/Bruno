@@ -149,9 +149,15 @@ define('VERROU', 'Changement écriture simple/double');
 |--------------------------------------------------------------------------
 |
 */
-Session::has('Courant.annee')? : Session::put('Courant.annee', date('Y'));
-Session::has('Courant.mois')? : Session::put('Courant.mois', date('Y.m'));
-// Session::flush();
+
+// Mois et année travail - par défaut le mois et l'année actuels.
+Session::has('tresorerie.exercice_travail')? : Session::put('tresorerie.exercice_travail', date('Y'));
+Session::has('tresorerie.mois_travail')? : Session::put('tresorerie.mois_travail', date('Y.m'));
+
+// Mois et année actuels.
+Session::has('tresorerie.annee_reelle')? : Session::put('tresorerie.annee_reelle', date('Y'));
+Session::has('tresorerie.mois_reel')? : Session::put('tresorerie.mois_reel', date('Y.m'));
+
 
 define('NBRE_PAR_PAGE', 10);
 

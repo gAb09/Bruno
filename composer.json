@@ -3,20 +3,26 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
+	"repositories": [
+	{
+		"type": "vcs",
+		"url": "https://github.com/gAb09/domaines"
+	}
+	],
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
 		"baum/baum": "~1.0",
 		"gab/nombres-fr": "~1.0",
 		"gab/dates-fr": "~1.0",
-		"gab/domaines": "~1.0",
 		"barryvdh/laravel-debugbar": "1.*",
 		"cartalyst/sentry": "2.0.*",
 		"illuminate/database": "4.0.*",
-		"ircmaxell/password-compat": "1.0.*"
-	},
-	"autoload": {
-		"classmap": [
+		"ircmaxell/password-compat": "1.0.*",
+		"gAb09/domaines": "dev-master"
+		},
+		"autoload": {
+			"classmap": [
 			"app/commands",
 			"app/controllers",
 			"app/database/migrations",
@@ -24,30 +30,29 @@
 			"app/tests/TestCase.php",
 			"app/modules",
 			"app/lib"
-		],
-		"psr-4": {
-			"lib\\dashboard\\": "app/lib/dashboard",
-			"Tresorerie\\Domaines\\": "app/modules/tresorerie/domaines",
-			"Gab\\Domaines\\": "vendor/gab/domaines/src/Gab/Domaines",
-			"Gab\\DatesFr\\": "vendor/gab/dates-fr/src/Gab/DatesFr",
-			"Gab\\NombresFr\\": "vendor/gab/nombres-fr/src/Gab/NombresFr"
-		}
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize",
-			"php artisan debugbar:publish"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
-}
+			],
+			"psr-4": {
+				"lib\\dashboard\\": "app/lib/dashboard",
+				"Tresorerie\\Domaines\\": "app/modules/tresorerie/domaines",
+				"Gab\\DatesFr\\": "vendor/gab/dates-fr/src/Gab/DatesFr",
+				"Gab\\NombresFr\\": "vendor/gab/nombres-fr/src/Gab/NombresFr"
+			}
+			},
+			"scripts": {
+				"post-install-cmd": [
+				"php artisan optimize"
+				],
+				"post-update-cmd": [
+				"php artisan clear-compiled",
+				"php artisan optimize",
+				"php artisan debugbar:publish"
+				],
+				"post-create-project-cmd": [
+				"php artisan key:generate"
+				]
+				},
+				"config": {
+					"preferred-install": "dist"
+					},
+					"minimum-stability": "dev"
+				}

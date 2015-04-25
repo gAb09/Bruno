@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "e398f59d1000e8a296930833f0df41b2",
+    "hash": "847536d7133113624b087f991ab18e32",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -785,6 +786,49 @@
                 "zf2"
             ],
             "time": "2013-06-10 12:22:13"
+        },
+        {
+            "name": "gab09/domaines",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gAb09/domaines.git",
+                "reference": "f5b6d70486f30e5eb4c8cf9f3e4bd6b1aa775db0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gAb09/domaines/zipball/f5b6d70486f30e5eb4c8cf9f3e4bd6b1aa775db0",
+                "reference": "f5b6d70486f30e5eb4c8cf9f3e4bd6b1aa775db0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.0.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Gab/Domaines"
+                ],
+                "psr-0": {
+                    "Gab\\Domaines": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "gab",
+                    "email": "brunogabiot@club-internet.fr"
+                }
+            ],
+            "description": "Hemper pour les domaines",
+            "support": {
+                "source": "https://github.com/gAb09/domaines/tree/master",
+                "issues": "https://github.com/gAb09/domaines/issues"
+            },
+            "time": "2015-04-23 18:30:49"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -2200,20 +2244,15 @@
             "time": "2013-12-14 04:48:56"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "way/generators": 20
+        "way/generators": 20,
+        "gab09/domaines": 20
     },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }

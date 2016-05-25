@@ -1,4 +1,4 @@
-.DS_Store
+.DS_Store*
 /bootstrap/compiled.php
 app/config/*
 app/start/local.php
